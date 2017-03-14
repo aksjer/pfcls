@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="flex-container">
+  <md-card class="flex-item">
+    <app-gesture [gesture]="gesture1"></app-gesture>
+  </md-card>
+  <md-card class="flex-item">
+    <app-gesture [gesture]="gesture2"></app-gesture>
+  </md-card>
+</div>
+<hr>
+<app-choice [end]="end" (choiceEvent)="selected($event)"></app-choice>

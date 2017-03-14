@@ -1,0 +1,3 @@
+<div class="flex-container">
+  <button class="flex-item" md-raised-button *ngFor="let gesture of gestures" (click)="selected(gesture)" [disabled]="end">{{gesture.name}}</button>
+</div>
